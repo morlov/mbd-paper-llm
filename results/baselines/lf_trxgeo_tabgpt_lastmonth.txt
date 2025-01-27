@@ -1,0 +1,5 @@
+Experiment: lf_trxgeo_tabgpt_lastmonth
+Target: bcard_target, ROC AUC: 0.656+-0.007
+Target: cred_target, ROC AUC: 0.758+-0.028
+Target: zp_target, ROC AUC: 0.706+-0.013
+Target: acquiring_target, ROC AUC: 0.847+-0.005

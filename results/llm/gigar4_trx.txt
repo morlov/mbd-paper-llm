@@ -1,0 +1,5 @@
+Experiment: gigar4_trx
+Target: bcard_target, ROC AUC: 0.677+-0.010
+Target: cred_target, ROC AUC: 0.790+-0.026
+Target: zp_target, ROC AUC: 0.771+-0.012
+Target: acquiring_target, ROC AUC: 0.863+-0.008

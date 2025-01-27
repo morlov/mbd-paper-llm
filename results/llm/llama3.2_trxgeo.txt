@@ -1,0 +1,5 @@
+Experiment: llama3.2_trxgeo
+Target: bcard_target, ROC AUC: 0.653+-0.014
+Target: cred_target, ROC AUC: 0.706+-0.048
+Target: zp_target, ROC AUC: 0.733+-0.006
+Target: acquiring_target, ROC AUC: 0.824+-0.001

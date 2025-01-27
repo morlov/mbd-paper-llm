@@ -1,0 +1,5 @@
+Experiment: trx_agg_lastmonth
+Target: bcard_target, ROC AUC: 0.683+-0.006
+Target: cred_target, ROC AUC: 0.793+-0.029
+Target: zp_target, ROC AUC: 0.761+-0.006
+Target: acquiring_target, ROC AUC: 0.885+-0.005

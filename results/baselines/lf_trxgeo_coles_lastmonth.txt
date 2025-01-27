@@ -1,0 +1,5 @@
+Experiment: lf_trxgeo_coles_lastmonth
+Target: bcard_target, ROC AUC: 0.689+-0.009
+Target: cred_target, ROC AUC: 0.811+-0.029
+Target: zp_target, ROC AUC: 0.758+-0.008
+Target: acquiring_target, ROC AUC: 0.884+-0.003

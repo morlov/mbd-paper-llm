@@ -1,0 +1,5 @@
+Experiment: qwen2.5_trxgeo
+Target: bcard_target, ROC AUC: 0.634+-0.011
+Target: cred_target, ROC AUC: 0.736+-0.021
+Target: zp_target, ROC AUC: 0.723+-0.008
+Target: acquiring_target, ROC AUC: 0.800+-0.005
