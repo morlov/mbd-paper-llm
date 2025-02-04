@@ -2,3 +2,4 @@ logs/
 .ipynb_checkpoints
 notebooks/.ipynb_checkpoints
 data/embeddings
+data/mbd

@@ -1,5 +1,15 @@
 Experiment: qwen2.5_trx
-Target: bcard_target, ROC AUC: 0.673+-0.013
-Target: cred_target, ROC AUC: 0.760+-0.029
-Target: zp_target, ROC AUC: 0.751+-0.008
-Target: acquiring_target, ROC AUC: 0.861+-0.006
+
+   bcard_target  cred_target  zp_target  acquiring_target
+0      0.635834     0.801392   0.755605          0.854885
+1      0.658524     0.730519   0.742324          0.860451
+2      0.686492     0.707059   0.755996          0.873251
+3      0.667096     0.736707   0.763396          0.860637
+4      0.661334     0.767462   0.756536          0.860637
+
+Target: bcard_target, ROC AUC: 0.662+-0.016
+Target: cred_target, ROC AUC: 0.749+-0.033
+Target: zp_target, ROC AUC: 0.755+-0.007
+Target: acquiring_target, ROC AUC: 0.862+-0.006
+
+ROC AUC: 0.757+-0.005

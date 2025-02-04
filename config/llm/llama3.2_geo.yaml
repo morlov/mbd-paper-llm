@@ -1,7 +1,7 @@
 
-experiment_name: "llama3.2_trxgeo"
+experiment_name: "llama3.2_geo"
 
-embedding_path: "/home/maorlov/mbd_paper/data/embeddings/llm/llama3.2_trxgeo.parquet"
+embedding_path: "/home/maorlov/mbd_paper/data/embeddings/llm/llama3.2_geo.parquet"
 target_path: "/home/maorlov/mbd_paper/data/mbd_targets_balanced.parquet"
 
 log_dir: "/home/maorlov/mbd_paper/logs/"

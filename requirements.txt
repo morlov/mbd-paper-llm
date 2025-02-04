@@ -1,0 +1,5 @@
+lightautoml 
+omegaconf 
+pyarrow
+datasets
+huggingface-hub

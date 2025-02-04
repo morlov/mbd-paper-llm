@@ -1,21 +1,21 @@
 import argparse
 import logging
 
-from omegaconf import OmegaConf
+from warnings import simplefilter
 
 import pandas as pd
-import glob
 import numpy as np
 from tqdm import tqdm
-
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score
 from sklearn.decomposition import PCA
 
 from lightautoml.automl.presets.tabular_presets import TabularAutoML
 from lightautoml.tasks import Task
 
-from warnings import simplefilter
+
+
+from omegaconf import OmegaConf
+
 simplefilter(action="ignore", category=pd.errors.PerformanceWarning)
 
 logger = logging.getLogger(__name__)
@@ -57,9 +57,7 @@ def apply_pca(df_train, df_test):
 def validate_embeddings(df_train, df_test, target, conf):
     
     task = Task(TASK_TYPE)
-    
     drop_targets = [t for t in TARGETS if t != target]
-    
     roles = {
         'target': target,
         'drop': DROP_COLS + drop_targets
@@ -84,7 +82,7 @@ def run_and_report(conf):
     logger.info(f"Read embeddings from: {conf['embedding_path']}")
     df_emb = pd.read_parquet(conf['embedding_path'])
     logger.info("Merge targets and embeddings")
-    df = df_emb.merge(df_targets, on="client_id")
+    df = df_targets.merge(df_emb, how="left", on="client_id").fillna(0) # For geo dataset
     logger.info(f"Merged. Embeeding size: {df_emb.shape[0]}, target size: {df_targets.shape[0]}, merged size: {df.shape[0]}")
     
     aucs_fold = np.zeros([N_FOLDS, N_TARGETS])
@@ -104,19 +102,25 @@ def run_and_report(conf):
     means = np.mean(aucs_fold, axis=0)
     stds = np.std(aucs_fold, axis=0)
 
+    global_mean = np.mean(np.mean(aucs_fold, axis=1))
+    global_std = np.std(np.mean(aucs_fold, axis=1))
+
     report_file = conf["results_dir"] + conf['experiment_name'] + '.txt'
 
     logger.info(f"Experiments completed, writing results to {report_file}")
     
     with open(report_file, "w") as f:
-        f.write(f"Experiment: {conf['experiment_name']}\n")
+        f.write(f"Experiment: {conf['experiment_name']}\n\n")
+
+        f.write(f"{pd.DataFrame(aucs_fold, columns=TARGETS).to_string()}\n\n")
+        
         for t, (m, s) in enumerate(zip(means, stds)):
             result = f"Target: {TARGETS[t]}, ROC AUC: {m:.3f}+-{s:.3f}"
             logger.info(result) 
             f.write(result + "\n")
+        f.write(f"\nROC AUC: {global_mean:.3f}+-{global_std:.3f}"   + "\n")
 
-def main(args):
-    
+def main(args): 
     args = parser.parse_args()
     conf = OmegaConf.load(args.config)
 

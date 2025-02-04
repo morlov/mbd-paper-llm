@@ -1,5 +1,15 @@
 Experiment: trx_colest_lastmonth
-Target: bcard_target, ROC AUC: 0.688+-0.006
-Target: cred_target, ROC AUC: 0.812+-0.023
-Target: zp_target, ROC AUC: 0.761+-0.007
-Target: acquiring_target, ROC AUC: 0.887+-0.003
+
+   bcard_target  cred_target  zp_target  acquiring_target
+0      0.685122     0.829936   0.764083          0.891519
+1      0.688749     0.845082   0.756120          0.886552
+2      0.697313     0.791684   0.753522          0.889196
+3      0.681477     0.810338   0.761646          0.885208
+4      0.683134     0.801604   0.770129          0.891632
+
+Target: bcard_target, ROC AUC: 0.687+-0.006
+Target: cred_target, ROC AUC: 0.816+-0.019
+Target: zp_target, ROC AUC: 0.761+-0.006
+Target: acquiring_target, ROC AUC: 0.889+-0.003
+
+ROC AUC: 0.788+-0.004

@@ -1,5 +1,15 @@
 Experiment: llama3.2_trxgeo
-Target: bcard_target, ROC AUC: 0.653+-0.014
-Target: cred_target, ROC AUC: 0.706+-0.048
-Target: zp_target, ROC AUC: 0.733+-0.006
-Target: acquiring_target, ROC AUC: 0.824+-0.001
+
+   bcard_target  cred_target  zp_target  acquiring_target
+0      0.645379     0.756411   0.696589          0.824075
+1      0.655462     0.766310   0.725307          0.821172
+2      0.690895     0.752589   0.735527          0.828201
+3      0.646002     0.666663   0.745974          0.827647
+4      0.652389     0.700744   0.729569          0.830962
+
+Target: bcard_target, ROC AUC: 0.658+-0.017
+Target: cred_target, ROC AUC: 0.729+-0.038
+Target: zp_target, ROC AUC: 0.727+-0.017
+Target: acquiring_target, ROC AUC: 0.826+-0.003
+
+ROC AUC: 0.735+-0.011

@@ -1,0 +1,15 @@
+Experiment: qwen2.5_geo
+
+   bcard_target  cred_target  zp_target  acquiring_target
+0      0.477233     0.482757   0.477105          0.492793
+1      0.489082     0.498834   0.464498          0.497293
+2      0.449441     0.495015   0.470339          0.559829
+3      0.478516     0.483732   0.512767          0.480397
+4      0.484414     0.497068   0.488920          0.550322
+
+Target: bcard_target, ROC AUC: 0.476+-0.014
+Target: cred_target, ROC AUC: 0.491+-0.007
+Target: zp_target, ROC AUC: 0.483+-0.017
+Target: acquiring_target, ROC AUC: 0.516+-0.032
+
+ROC AUC: 0.492+-0.008

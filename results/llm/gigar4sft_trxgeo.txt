@@ -1,5 +1,15 @@
-Experiment: gigar4sft_trx
-Target: bcard_target, ROC AUC: 0.648+-0.019
-Target: cred_target, ROC AUC: 0.753+-0.036
-Target: zp_target, ROC AUC: 0.728+-0.014
-Target: acquiring_target, ROC AUC: 0.825+-0.007
+Experiment: gigar4sft_trxgeo
+
+   bcard_target  cred_target  zp_target  acquiring_target
+0      0.644296     0.762471   0.707586          0.823628
+1      0.638038     0.770309   0.728517          0.819840
+2      0.671149     0.806543   0.726045          0.828237
+3      0.624277     0.694260   0.736979          0.817927
+4      0.661514     0.667409   0.728778          0.841347
+
+Target: bcard_target, ROC AUC: 0.648+-0.017
+Target: cred_target, ROC AUC: 0.740+-0.051
+Target: zp_target, ROC AUC: 0.726+-0.010
+Target: acquiring_target, ROC AUC: 0.826+-0.008
+
+ROC AUC: 0.735+-0.014

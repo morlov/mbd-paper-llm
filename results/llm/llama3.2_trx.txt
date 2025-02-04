@@ -1,5 +1,15 @@
 Experiment: llama3.2_trx
-Target: bcard_target, ROC AUC: 0.683+-0.017
-Target: cred_target, ROC AUC: 0.770+-0.024
-Target: zp_target, ROC AUC: 0.770+-0.007
-Target: acquiring_target, ROC AUC: 0.869+-0.004
+
+   bcard_target  cred_target  zp_target  acquiring_target
+0      0.670698     0.792606   0.767651          0.864940
+1      0.679656     0.789427   0.762173          0.866566
+2      0.713956     0.765261   0.773006          0.876545
+3      0.665327     0.740731   0.777574          0.866338
+4      0.689735     0.760156   0.770735          0.873771
+
+Target: bcard_target, ROC AUC: 0.684+-0.017
+Target: cred_target, ROC AUC: 0.770+-0.019
+Target: zp_target, ROC AUC: 0.770+-0.005
+Target: acquiring_target, ROC AUC: 0.870+-0.005
+
+ROC AUC: 0.773+-0.006
