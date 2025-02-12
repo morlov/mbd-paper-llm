@@ -82,7 +82,7 @@ def run_and_report(conf):
     logger.info(f"Read embeddings from: {conf['embedding_path']}")
     df_emb = pd.read_parquet(conf['embedding_path'])
     logger.info("Merge targets and embeddings")
-    df = df_targets.merge(df_emb, how="left", on="client_id").fillna(0) # For geo dataset
+    df = df_targets.merge(df_emb, on="client_id").fillna(0) # For geo dataset
     logger.info(f"Merged. Embeeding size: {df_emb.shape[0]}, target size: {df_targets.shape[0]}, merged size: {df.shape[0]}")
     
     aucs_fold = np.zeros([N_FOLDS, N_TARGETS])

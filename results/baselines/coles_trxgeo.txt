@@ -1,0 +1,15 @@
+Experiment: coles_trxgeo
+
+   bcard_target  cred_target  zp_target  acquiring_target
+0      0.672013     0.814542   0.755245          0.878277
+1      0.673403     0.836825   0.755270          0.880992
+2      0.690768     0.804486   0.752645          0.881782
+3      0.687241     0.812989   0.764817          0.886503
+4      0.678690     0.764556   0.771021          0.886817
+
+Target: bcard_target, ROC AUC: 0.680+-0.007
+Target: cred_target, ROC AUC: 0.807+-0.024
+Target: zp_target, ROC AUC: 0.760+-0.007
+Target: acquiring_target, ROC AUC: 0.883+-0.003
+
+ROC AUC: 0.782+-0.005

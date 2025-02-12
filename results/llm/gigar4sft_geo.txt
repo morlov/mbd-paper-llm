@@ -1,15 +1,15 @@
 Experiment: gigar4sft_geo
 
    bcard_target  cred_target  zp_target  acquiring_target
-0      0.500318     0.553676   0.503244          0.511961
-1      0.487537     0.492707   0.485724          0.503293
-2      0.482857     0.522061   0.472973          0.543671
-3      0.479110     0.500997   0.509267          0.463954
-4      0.501331     0.508003   0.478673          0.551666
+0      0.553312     0.536818   0.530996          0.561994
+1      0.515133     0.546984   0.536915          0.568216
+2      0.548289     0.507781   0.542081          0.558232
+3      0.533968     0.533929   0.568858          0.559992
+4      0.543514     0.592690   0.538935          0.592792
 
-Target: bcard_target, ROC AUC: 0.490+-0.009
-Target: cred_target, ROC AUC: 0.515+-0.021
-Target: zp_target, ROC AUC: 0.490+-0.014
-Target: acquiring_target, ROC AUC: 0.515+-0.031
+Target: bcard_target, ROC AUC: 0.539+-0.013
+Target: cred_target, ROC AUC: 0.544+-0.028
+Target: zp_target, ROC AUC: 0.544+-0.013
+Target: acquiring_target, ROC AUC: 0.568+-0.013
 
-ROC AUC: 0.503+-0.011
+ROC AUC: 0.549+-0.010

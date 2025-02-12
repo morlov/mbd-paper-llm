@@ -1,6 +1,6 @@
-experiment_name: "trx_colest_lastmonth"
+experiment_name: "tabbert_geo"
 
-embedding_path: "/home/maorlov/mbd_paper/data/embeddings/baselines/trx_coles_lastmonth.parquet"
+embedding_path: "/home/maorlov/mbd_paper/data/embeddings/baselines/last_month/geo/tabbert/"
 target_path: "/home/maorlov/mbd_paper/data/mbd_targets_balanced.parquet"
 
 log_dir: "/home/maorlov/mbd_paper/logs/"

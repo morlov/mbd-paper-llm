@@ -1,0 +1,15 @@
+Experiment: agg_geo
+
+   bcard_target  cred_target  zp_target  acquiring_target
+0      0.474615     0.533815   0.530500          0.546376
+1      0.521231     0.528055   0.518598          0.561801
+2      0.503612     0.562576   0.535898          0.550078
+3      0.531277     0.515993   0.524346          0.527601
+4      0.515060     0.557495   0.539012          0.531734
+
+Target: bcard_target, ROC AUC: 0.509+-0.019
+Target: cred_target, ROC AUC: 0.540+-0.018
+Target: zp_target, ROC AUC: 0.530+-0.007
+Target: acquiring_target, ROC AUC: 0.544+-0.012
+
+ROC AUC: 0.530+-0.006

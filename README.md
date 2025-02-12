@@ -17,7 +17,12 @@ mkdir data/embeddings/baselines
 mkdir logs
 ```
 
-## Run downstream example
+## Run downstream for llm
 ```console
-bash script/run_all.sh
+bash script/run-all-llm.sh
+```
+
+## Run downstream for baselines
+```console
+bash script/run-all-baseline.sh
 ```

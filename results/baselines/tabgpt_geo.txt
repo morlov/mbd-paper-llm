@@ -1,0 +1,15 @@
+Experiment: tabgpt_geo
+
+   bcard_target  cred_target  zp_target  acquiring_target
+0      0.560052     0.638783   0.604247          0.596199
+1      0.551159     0.600680   0.526760          0.623923
+2      0.551544     0.703688   0.598093          0.607902
+3      0.546605     0.673020   0.601580          0.592924
+4      0.525275     0.624324   0.545352          0.598865
+
+Target: bcard_target, ROC AUC: 0.547+-0.012
+Target: cred_target, ROC AUC: 0.648+-0.036
+Target: zp_target, ROC AUC: 0.575+-0.033
+Target: acquiring_target, ROC AUC: 0.604+-0.011
+
+ROC AUC: 0.594+-0.016

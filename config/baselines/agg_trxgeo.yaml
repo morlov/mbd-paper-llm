@@ -1,0 +1,17 @@
+experiment_name: "agg_trxgeo"
+
+embedding_path: "/home/maorlov/mbd_paper/data/embeddings/baselines/last_month/late_fusion/agg/"
+target_path: "/home/maorlov/mbd_paper/data/mbd_targets_balanced.parquet"
+
+log_dir: "/home/maorlov/mbd_paper/logs/"
+
+results_dir: "/home/maorlov/mbd_paper/results/baselines/"
+
+
+apply_pca: false
+
+automl_settings:
+  n_threads: 8
+  n_folds: 5
+  test_size: 0.2
+  timeout: 120

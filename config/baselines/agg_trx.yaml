@@ -1,6 +1,6 @@
-experiment_name: "trx_tabbert_lastmonth"
+experiment_name: "agg_trx"
 
-embedding_path: "/home/maorlov/mbd_paper/data/embeddings/baselines/trx_tabbert_lastmonth.parquet"
+embedding_path: "/home/maorlov/mbd_paper/data/embeddings/baselines/last_month/trx/agg/"
 target_path: "/home/maorlov/mbd_paper/data/mbd_targets_balanced.parquet"
 
 log_dir: "/home/maorlov/mbd_paper/logs/"

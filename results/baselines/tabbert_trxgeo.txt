@@ -1,0 +1,15 @@
+Experiment: tabbert_trxgeo
+
+   bcard_target  cred_target  zp_target  acquiring_target
+0      0.672471     0.842984   0.759604          0.880651
+1      0.679223     0.870536   0.740139          0.883178
+2      0.691058     0.821794   0.753113          0.889227
+3      0.677352     0.823849   0.767568          0.878457
+4      0.683522     0.801971   0.775722          0.886795
+
+Target: bcard_target, ROC AUC: 0.681+-0.006
+Target: cred_target, ROC AUC: 0.832+-0.023
+Target: zp_target, ROC AUC: 0.759+-0.012
+Target: acquiring_target, ROC AUC: 0.884+-0.004
+
+ROC AUC: 0.789+-0.002

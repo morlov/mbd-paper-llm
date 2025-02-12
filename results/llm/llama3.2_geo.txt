@@ -1,15 +1,15 @@
 Experiment: llama3.2_geo
 
    bcard_target  cred_target  zp_target  acquiring_target
-0      0.473831     0.552621   0.529134          0.538767
-1      0.503159     0.495145   0.510108          0.481341
-2      0.480932     0.535627   0.454864          0.558411
-3      0.467006     0.598786   0.504153          0.504559
-4      0.480805     0.501827   0.517973          0.563206
+0      0.537339     0.591053   0.526056          0.559719
+1      0.541521     0.514269   0.517309          0.569647
+2      0.547892     0.483461   0.541439          0.565349
+3      0.518570     0.566184   0.528415          0.552466
+4      0.516237     0.525968   0.514521          0.571307
 
-Target: bcard_target, ROC AUC: 0.481+-0.012
-Target: cred_target, ROC AUC: 0.537+-0.038
-Target: zp_target, ROC AUC: 0.503+-0.026
-Target: acquiring_target, ROC AUC: 0.529+-0.032
+Target: bcard_target, ROC AUC: 0.532+-0.013
+Target: cred_target, ROC AUC: 0.536+-0.038
+Target: zp_target, ROC AUC: 0.526+-0.009
+Target: acquiring_target, ROC AUC: 0.564+-0.007
 
-ROC AUC: 0.513+-0.009
+ROC AUC: 0.539+-0.008

@@ -1,0 +1,15 @@
+Experiment: agg_trx
+
+   bcard_target  cred_target  zp_target  acquiring_target
+0      0.682272     0.827223   0.757375          0.882306
+1      0.683160     0.842782   0.759151          0.887883
+2      0.691148     0.747902   0.762297          0.888541
+3      0.669931     0.770879   0.755485          0.881074
+4      0.677329     0.792045   0.772617          0.889104
+
+Target: bcard_target, ROC AUC: 0.681+-0.007
+Target: cred_target, ROC AUC: 0.796+-0.035
+Target: zp_target, ROC AUC: 0.761+-0.006
+Target: acquiring_target, ROC AUC: 0.886+-0.003
+
+ROC AUC: 0.781+-0.009
